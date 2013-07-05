@@ -972,18 +972,6 @@ blockquote.pull-left{
 }
 
 @media only screen and (max-width: 979px) {
-    .navbar {
-        top: 0px;
-    }
-    .navbar .brand {
-        display:block;
-    }
-    .logo-header{
-        display:none;
-    }
-    .background-logo{
-        display:none;
-    }
     .home-card {
         padding: 0px 0 48px 0;
         box-shadow: inset 0 7px 7px rgba(0, 0, 0, .2);
@@ -1114,7 +1102,21 @@ blockquote.pull-left{
         padding-top: 20px;
     }
 }
+@media only screen and (max-width: 720px) {
+    .navbar {
+        top: 0px;
+    }
+    .navbar .brand {
+        display:block;
+    }
+    .logo-header{
+        display:none;
+    }
+    .background-logo{
+        display:none;
+    }
 
+}
 
 @media only screen and (min-width: 480px) {
     body{
@@ -1135,11 +1137,6 @@ blockquote.pull-left{
 		padding: 0 0 0 0;
 	}
 	
-	
-	.navbar .brand {
-        display:none;
-    }
-    
 	.container-fluid{
 		margin: 0 auto;
 		/*
@@ -1220,6 +1217,12 @@ blockquote.pull-left{
 		padding-left: 0;
 		padding-right: 0;
 	}
+}
+
+@media only screen and (min-width: 721px) {
+    .navbar .brand {
+        display:none;
+    }
 }
 
 @media only screen and (min-width: 980px) {
