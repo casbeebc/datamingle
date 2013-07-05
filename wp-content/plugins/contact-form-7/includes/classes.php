@@ -558,14 +558,8 @@ class WPCF7_ContactForm {
 		if ( $additional_headers )
 			$headers .= $additional_headers . "\n";
 
-		if ( $send ) {
-		    
-    		print_r($headers);
-    		echo "<br>------------ATTACHMENTS------------<br>";
-    		print_r($attachments);
-    		
-			return wp_mail( $recipient, $subject, $body, $headers, $attachments );
-        }
+		if ( $send )
+			return @wp_mail( $recipient, $subject, $body, $headers, $attachments );
 
 		return compact( 'subject', 'sender', 'body', 'recipient', 'headers', 'attachments' );
 	}
