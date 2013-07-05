@@ -98,6 +98,7 @@ header {
     top: 0px;
     text-align: center;
     width: 100%;
+    z-index:9999999999999;
 }
 .nav-collapse{
     text-align: center;
