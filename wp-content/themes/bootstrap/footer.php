@@ -65,7 +65,6 @@
                      <div class="span3">
                         <address class="small">
                           <span class="bold company"><i class="icon-user color"></i> DataMingle</span><br>
-                          <i class="icon-envelope-alt color"></i> info@datamingle.com<br>
                           <i class="icon-phone color"></i> (703) 422-5861
                         </address>
                      </div>
