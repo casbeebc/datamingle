@@ -90,11 +90,11 @@ header {
     overflow: hidden;
     
     /*background-image: url("http://www.ibuildworlds.com/storage/IBW_hubway3.png");*/
-    background-image: url("/wp-content/themes/bootstrap/images/header_short.jpg");
+    /*background-image: url("/wp-content/themes/bootstrap/images/header_short.jpg");*/
     position: relative;
 }
 .logo-header {
-    position: fixed;
+    position: absolute;
     top: 0px;
     text-align: center;
     width: 100%;
@@ -104,7 +104,7 @@ header {
     text-align: center;
 }
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 150px;
 }
 .navbar .nav {
@@ -270,7 +270,7 @@ header {
 }
 .home-part2 {
     background: #cbc9c6 url("/wp-content/themes/bootstrap/images/home_part2_bg.jpg") repeat-x 50% 50%;
-    height: 750px;
+    height: 400px;
 }
 .home-part2 .home-description {
     left: 50px;

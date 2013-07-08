@@ -57,15 +57,9 @@
                   <div class="row">
                      <div class="span3">
                         <address class="small">
-                          <span class="bold company"><i class="icon-globe color"></i> DataMingle</span><br>
+                          <span style="font-weight:bold;">DataMingle</span><br>
                           2720 East Evans Road<br>
                           San Diego, CA 92106<br>
-                        </address>
-                     </div>
-                     <div class="span3">
-                        <address class="small">
-                          <span class="bold company"><i class="icon-user color"></i> DataMingle</span><br>
-                          <i class="icon-phone color"></i> (703) 422-5861
                         </address>
                      </div>
                   </div>
