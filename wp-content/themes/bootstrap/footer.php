@@ -30,7 +30,7 @@
 
 <footer>
   <div class="container">
-    <div class="contact">
+    <div id="contact" class="contact">
       <div class="row">
          <div class="span12">
             <div class="up"><a href="#top" class="anchorLink"><i class="icon-caret-up"></i></a></div>
