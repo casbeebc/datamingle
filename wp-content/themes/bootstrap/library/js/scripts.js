@@ -101,5 +101,19 @@ jQuery(document).ready(function($) {
 	$('.alert-message').alert();
 	
 	$('.dropdown-toggle').dropdown();
+	
+	
+	// add map
+	var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+		osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+		osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
+		
+	var map = L.map('gmap').setView([32.731565,-117.218269], 14).addLayer(osm);
+	
+	L.marker([32.731565,-117.218269])
+		.addTo(map)
+		.bindPopup('DataMingle')
+		.openPopup();
+	
  
 }); /* end of as page load scripts */

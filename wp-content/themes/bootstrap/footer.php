@@ -48,9 +48,7 @@
          </div>
          <div class="span6">
                <!-- Google maps -->
-               <div class="gmap">
-                   <img src="/wp-content/themes/bootstrap/images/datamingle_map.jpg"/>
-               </div>
+               <div id="gmap" class="map" style="height: 300px"></div>
                <hr />
                <!-- Address -->
                <div class="address">
