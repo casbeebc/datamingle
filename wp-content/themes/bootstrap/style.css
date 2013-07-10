@@ -49,6 +49,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 body{
 	padding-top: 0;
 	margin: 0 0 0 0;
+	text-shadow: #000 1px 1px 6px;
 }
 /*
 header {
@@ -141,7 +142,14 @@ header {
     position: absolute;
 }
 .home-card .client {
-    color: #555;
+/*    color: #555;*/
+    
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 35px;
+    text-shadow: #000 1px 1px 6px;
 }
 .home-card h1, .home-card h2, .home-card h4, .home-card h6 {
     /*position: absolute;*/
@@ -153,7 +161,7 @@ header {
 .home-card h1 {
     position: absolute;
     font-size: 42px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+    /*text-shadow: 0 2px 2px rgba(0, 0, 0, .3);*/
     top: 80px;
 }
 .home-card h4 {
@@ -167,6 +175,8 @@ header {
     line-height: 18px;
     font-weight: bold;
     color: #e24e35;
+    text-shadow: #2e2c2a 1px 1px 1px;
+    /*text-shadow: #000 0px 0px 2px;*/
     /*font-style: italic;*/
 }
 
@@ -259,7 +269,7 @@ header {
 
 .home-part1 {
     background: #2e2c2a url("/wp-content/themes/bootstrap/images/home_part1_bg.jpg") repeat-x 50% 50%;
-    height: 750px;
+    height: 800px;
 }
 .home-part1 .home-description {
     right: 0;
@@ -403,6 +413,24 @@ input, textarea, select, .uneditable-input {
 
 .more-link{
 	white-space: nowrap;
+}
+
+footer {
+    text-shadow: none;
+}
+
+footer .copyright {
+    height: 135px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    line-height: 18px;
+    padding-top: 53px;
 }
 
 footer input,textarea,button {
@@ -1062,7 +1090,7 @@ blockquote.pull-left{
     }
     
     .home-part1 {
-        height: 1500px;
+        height: 1600px;
     }
     .home-part2 {
         height: 500px;

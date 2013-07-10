@@ -40,7 +40,7 @@
          <div class="span6">
             <div class="form padd">
                <!-- Contact title -->
-              <h4>Contact Us</h4>
+              <h4>Contact</h4>
               <hr />
               <!-- Contact form -->
               <?php echo do_shortcode( '[contact-form-7 id="41" title="Contact form 1"]' ); ?>
@@ -67,23 +67,10 @@
     </div>
     <hr />
     <!-- Copyright info -->
-    <div class="row copy">
-      <div class="span5">
-         <div class="padd">
-            <p>Copyright &copy; <a href="#">DataMingle</a></p>
-         </div>
-      </div>
-      <div class="span3 offset4">
-         <div class="padd">
-            <!-- Social media icons. Replace # with your profile link -->
-            <div class="social">
-               <a href="#"><i class="icon-facebook"></i></a>
-               <a href="#"><i class="icon-twitter"></i></a>
-               <a href="#"><i class="icon-linkedin"></i></a>
-               <a href="#"><i class="icon-google-plus"></i></a>
-            </div>
-         </div>
-      </div>
+    <div class="copyright">
+         
+        <p>Copyright &copy; <a href="#">DataMingle</a></p>
+         
     </div>
   <div class="clearfix"></div>
   </div>
