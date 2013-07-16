@@ -40,8 +40,35 @@
 	
 	<body <?php body_class(); ?> style="margin: 0 0 0 0; padding: 0 0 0 0;">		
         
+        <div class="above-banner">
+            <div id="top-social">
+                        <ul>
+                            <li class="ts-facebook">
+                                <a href="https://www.facebook.com/datamingle" style="width: 40px;" target="_blank">
+                                <div class="ts-icon"></div><div class="ts-text">Facebook</div></a>
+                            </li>
+                            <li class="ts-twitter">
+                                <a href="https://twitter.com/datamingle" style="width:40px;overflow:hidden;"
+                                     target="_blank">
+                                <div class="ts-icon" target="_blank"></div><div class="ts-text">Twitter</div></a>
+                            </li>
+                            <li class="ts-gplus">
+                                <a href="https://plus.google.com/102922183928811444113" rel="publisher" 
+                                    style="width: 40px; overflow: hidden;" target="_blank">
+                                <div class="ts-icon"></div><div class="ts-text">Google+</div></a>
+                            </li>
+                            <li class="ts-phone">
+                                <a href="tel:+16192928210" style="width: 40px; overflow: hidden;">
+                                <div class="ts-icon"></div><div class="ts-text" target="_blank">+1 (619) 292-8210</div></a>
+                            </li>
+                            <li class="ts-mail">
+                                <a href="#contact" style="width: 40px; overflow: hidden;">
+                                <div class="ts-icon"></div><div class="ts-text">Contact Form</div></a>
+                            </li>
+                        </ul>
+            </div>
         <?php if(of_get_option('branding_logo','')!='') { ?>
-            <div class="background-logo" style="height:150px;">&nbsp;</div>
+            <div class="background-logo" style="height:140px;">&nbsp;</div>
             <div class="logo-header">
     			        
     							<img src="<?php echo of_get_option('branding_logo'); ?>" 
@@ -49,11 +76,13 @@
     			        
             </div>
         <?php } ?>
+        </div>
 		<header role="banner">
 			<div id="inner-header" class="clearfix">
 				<div class="navbar navbar-fixed-top">
 				    
 					<div class="navbar-inner">
+					   
 						<div class="container-fluid nav-container">
 							<nav role="navigation">
 								<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
@@ -89,3 +118,4 @@
 		</header> <!-- end header -->
 		
 		<div class="container-fluid">
+		

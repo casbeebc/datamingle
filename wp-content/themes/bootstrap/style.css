@@ -72,6 +72,10 @@ header {
     position: relative;
 }
 */
+.above-banner {
+    width:100%;
+    text-align:center;
+}
 .background-logo{
     background-repeat: no-repeat;
     background-position: center;
@@ -99,7 +103,9 @@ header {
     top: 0px;
     text-align: center;
     width: 100%;
+    /*
     z-index:9999999999999;
+    */
 }
 .nav-collapse{
     text-align: center;
@@ -1037,6 +1043,103 @@ blockquote.pull-left{
 	padding-right: 15px;
 }
 
+
+/* Social CSS */
+
+#top-social {
+    position: relative;
+    float: right;
+    height: 40px;
+    margin: 0 0 0 0;
+    z-index:9999999999999;
+}
+
+#top-social li a {
+    width: 40px;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+#top-social ul {
+    list-style: none;
+    margin: 0;
+}
+#top-social li, #top-social li a, #top-social li .ts-text {
+    float: left;
+    width: auto;
+    overflow: hidden;
+}
+#top-social li, #top-social li a, #top-social li .ts-icon, #top-social li .ts-text {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+#top-social li .ts-icon { float: left; }
+
+#top-social li.ts-facebook a { background-color: #0e76bc; }
+
+#top-social li.ts-facebook .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/facebook.png") no-repeat center center; }
+
+#top-social li.ts-twitter a { background-color: #25aae1; }
+
+#top-social li.ts-twitter .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/twitter.png") no-repeat center center; }
+
+#top-social li.ts-gplus a { background-color: #ed1c24; }
+
+#top-social li.ts-gplus .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/gplus.png") no-repeat center center; }
+
+#top-social li.ts-dribbble a { background-color: #D97AA5; }
+
+#top-social li.ts-dribbble .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/dribbble.png") no-repeat center center; }
+
+#top-social li.ts-forrst a { background-color: #304C25; }
+
+#top-social li.ts-forrst .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/forrst.png") no-repeat center center; }
+
+#top-social li.ts-blogger a { background-color: #FCA448; }
+
+#top-social li.ts-blogger .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/blogger.png") no-repeat center center; }
+
+#top-social li.ts-flickr a { background-color: #FF0084; }
+
+#top-social li.ts-flickr .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/flickr.png") no-repeat center center; }
+
+#top-social li.ts-pinterest a { background-color: #CB2027; }
+
+#top-social li.ts-pinterest .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/pinterest.png") no-repeat center center; }
+
+#top-social li.ts-rss a { background-color: #f1592a; }
+
+#top-social li.ts-rss .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/rss.png") no-repeat center center; }
+
+#top-social li.ts-vimeo a { background-color: #0590B8; }
+
+#top-social li.ts-vimeo .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/vimeo.png") no-repeat center center; }
+
+#top-social li.ts-youtube a { background-color: #F33; }
+
+#top-social li.ts-youtube .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/youtube.png") no-repeat center center; }
+
+#top-social li.ts-phone a { background-color: #662d91; }
+
+#top-social li.ts-phone .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/phone.png") no-repeat center center; }
+
+#top-social li.ts-mail a { background-color: #8dc63f; }
+
+#top-social li.ts-mail .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/mail.png") no-repeat center center; }
+
+#top-social li.ts-linkedin a { background-color: #13A59E; }
+
+#top-social li.ts-linkedin .ts-icon { background: url("/wp-content/themes/bootstrap/images/social/linkedin.png") no-repeat center center; }
+
+
 @media only screen and (max-width: 979px) {
     .home-card {
         padding: 0px 0 48px 0;
@@ -1175,7 +1278,10 @@ blockquote.pull-left{
     .navbar .brand {
         display:block;
     }
-    .logo-header{
+    .logo-header {
+        display:none;
+    }
+    #top-social {
         display:none;
     }
     .background-logo{

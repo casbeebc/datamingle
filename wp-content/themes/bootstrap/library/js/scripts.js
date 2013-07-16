@@ -114,6 +114,72 @@ jQuery(document).ready(function($) {
 		.addTo(map)
 		.bindPopup('DataMingle')
 		.openPopup();
-	
+
+
+    /* Social Top Menu */
+        
+    var topSocialExpander = function() {
+            
+        var windowWidth = $(window).width();
+                
+        if( windowWidth > 767 ) {
+        
+            $("#top-social li").show();
+            
+            $("#top-social li a").css({width: 40});
+            
+            $("#top-social li a").each(function() {
+                $(this).removeClass('stip');
+                $(this).removeAttr('title');
+                $(this).removeAttr('original-title');
+            });
+            
+            $("#top-social li a").hover(function() {
+                var tsTextWidth = $(this).children('.ts-text').outerWidth() + 52;
+    			$(this).stop().animate({width: tsTextWidth}, 250, 'swing');
+    			$(this).fadeTo("slow", 1);
+    		}, function() {
+    			$(this).stop().animate({width: 40}, 250, 'swing');
+    			$(this).fadeTo("slow", .50);
+    		});
+        
+        } else {
+            
+            $("#top-social li").show();
+            
+            $("#top-social li a").css({width: 40});
+            
+            $("#top-social li a").each(function() {
+                $(this).addClass('stip');
+                var topIconTitle = $(this).children('.ts-text').text();
+                $(this).attr('title', topIconTitle);
+            });
+            
+            sTip();
+            
+            $("#top-social li a").hover(function() {
+                $(this).stop().animate({width: 40}, 1, 'swing');
+    		}, function() {
+    			$(this).stop().animate({width: 40}, 1, 'swing');
+    		});
+            
+            if( windowWidth < 479 ) {
+                
+                $("#top-social li").hide();
+                $("#top-social li").slice(0, 8).show();
+                
+            }
+            
+        }
+        
+    };
+    
+	topSocialExpander();
+    
+    $(window).resize(function() {
+        topSocialExpander();
+        //stickyMenuFunction();
+    });
+        
  
 }); /* end of as page load scripts */
