@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Datamingle</title>
+  <meta name="author" content="Brett Casbeer">
+  <meta name="description" content="Experienced software development">
+  <meta name="keywords" content="software development engineer app apps" />
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<box>
+		<div class="row">
+			<div class="large-3 columns">
+				<div class="animated bounceInLeft">
+				<sidebar>
+					<logo>
+						<img src="img/logo.png" alt="logo" />
+					</logo>
+					<intro>
+						Complex software<br/>presented simply 
+					<line></line><!-- separation line -->
+					</intro>
+          <!--
+					<nav>
+						<a href="" id="active">Home</a>
+						<a href="about.htm">About&nbspme</a>
+					</nav>
+					<line></line>
+          -->
+					<contact>
+						<a href="mailto:will.be.replaced.by.js@datamingle.com">Contact</a>
+					</contact>
+					<line></line><!-- separation line -->
+					<worksnav>
+					    <h1>My works</h1>
+					    <a href="#">EarlyIQ</a>
+					    <a href="#">NATO</a>
+					    <a href="#">Charles Schwab</a>
+					    <a href="#">North American Bancard</a>
+					    <a href="#">Expedia</a>
+					    <a href="#">Gemfling</a>
+					</worksnav>
+				</sidebar>
+				</div><!-- animation -->
+			</div>
+			<div class="large-9 columns">
+				<div class="animated fadeIn">
+				<ul class="small-block-grid-2 large-block-grid-2">
+				  <li>
+					  <a class="caption caption1" href="#" data-title="EarlyIQ"><img src="img/1.jpg" alt="EarlyIQ"></a>
+				  </li>
+				  <li>
+              <a class="caption caption1" href="#" data-title="Gemfling"><img src="img/gemfling.jpg" alt="Gemfling"></a>
+				  </li>
+				  <li>
+				  	  <a class="caption caption1" href="#" data-title="Charles Schwab"><img src="img/charles_schawb.jpg" alt="Charles Schwab"></a>
+				  </li>
+				  <li>
+              <a class="caption caption1" href="#" data-title="North American Bancard"><img src="img/2.jpg" alt="North American Bancard"></a>
+				  </li>
+				  <li>
+				  	  <a class="caption caption1" href="#" data-title="Expedia/Myers Media Group"><img src="img/expedia.jpg" alt="Expedia"></a>
+				  </li>
+				  <li>
+				  	  <a class="caption caption1" href="#" data-title="North Atlantic Treaty Organization"><img src="img/nato.jpg" alt="NATO"></a>
+				  </li>
+				</ul>
+				</div><!-- animation -->
+				<footer></footer>
+			</div>
+		</div>
+	</box>
+			
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <!--
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.alerts.js"></script>
+  <script src="js/foundation/foundation.clearing.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  -->
+  
+  <script>
+    //$(document).foundation();
+  </script>
+  <script>
+    window.onload = function() {
+        setTimeout(function(){window.scrollTo(0, 1);}, 1);
+    }
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        var x = $("contact a").attr("href");
+        $("contact a").attr("href", x.substr(0,7) + "brett" + x.substr(29));
+    });
+  </script>
+</body>
+</html>
